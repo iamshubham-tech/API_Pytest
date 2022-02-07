@@ -1,4 +1,6 @@
 # API_Pytest
+**Author : Shubham Pimple**
+
 This project is about automation of API's using PyTest framework. So far I have covered reqres and GIT API requests.
 Many more wil get added to this project
 
