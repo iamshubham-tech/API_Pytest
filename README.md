@@ -14,5 +14,6 @@ Many more wil get added to this project
 
 pytest 'path to the file/files' --alluredir 'path of the folder in which reports will get stored' 
 
+If you want to automate git api's then you need to creat personal access token first from your git account
 
 
