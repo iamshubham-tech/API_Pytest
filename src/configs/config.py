@@ -1,10 +1,10 @@
 API_HOSTS={
     "test" : "https://reqres.in",
-    "username" : "shubhtechie",
-    "reponame" : "APIGenerated_Cpy"
+    "username" : "XXXXXXXX",
+    "reponame" : "XXXXXXXXX"
 }
 
-token = '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'
+token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 Auth_data = {
         'Authorization' : 'Bearer {}'.format(token)
     }
