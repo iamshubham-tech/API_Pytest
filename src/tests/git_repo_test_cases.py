@@ -17,12 +17,14 @@ req = GitRequestUtils()
 """
 Get List of repos
 """
+@pytest.mark.git_tc
 def test_get_repos():
     res = req.get_repos()
-    print(res.json())
+    print(res.status_code)
 
 
 """Create Repo"""
+@pytest.mark.git_tc
 def test_create_repo():
     res = req.post_repo()
     print(res.json())
@@ -33,24 +35,28 @@ def test_create_repo():
 
 
 #Getting list of users
+@pytest.mark.git_tc
 def test_get_users():
     res = req.get('users')
     print(res.json())
 
 
 #Getting a specific user
+@pytest.mark.git_tc
 def test_get_single_user():
     res = req.get('users/{}'.format(API_HOSTS['username']))
     print(res.json())
 
 
 """Deleting a repo"""
+@pytest.mark.git_tc
 def test_delete_repo():
     res = req.delete('/repos/{}/{}'.format(API_HOSTS['username'],repo_details['name']))
 
 
 """Creating a repo by using post method directly"""
 """Note: Providing endpoints in the test file itself. Not using the defined method for repo creation"""
+@pytest.mark.git_tc
 def test_repo_create():
     res = req.post('/user/repos', data=json.dumps(repo_details))
     print(res.status_code)
